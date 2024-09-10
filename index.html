@@ -1,0 +1,611 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/font-awesome.css" />
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="icon" href="./images/Capture.PNG" />
+    <title>Faruq Bootcamps</title>
+  </head>
+  <body id="home">
+    <nav class="navbar navbar-expand-lg fixed-top navbar-dark">
+      <div class="container">
+        <a href="index.html" class="navbar-brand">
+          <p style="font-weight: 900;">Faruq Bootcamps</p>
+          
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#home">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#discover">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#summary">Mission</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#takeaways">Careers</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#subscribe">Subscribe</a>
+            </li>
+          </ul>
+          <span class="nav-item">
+            <span class="fa-stack">
+              <a href="#">
+                <i class="fas fa-circle fa-stack-2x"></i>
+                <i class="fab fa-facebook-f fa-stack-1x text-white"></i>
+              </a>
+            </span>
+          </span>
+          <span class="nav-item">
+            <span class="fa-stack">
+              <a href="#">
+                <i class="fas fa-circle fa-stack-2x"></i>
+                <i class="fab fa-twitter fa-stack-1x text-white"></i>
+              </a>
+            </span>
+            <span class="fa-stack">
+              <a href="#">
+                <i class="fas fa-circle fa-stack-2x"></i>
+                <i class="fab fa-linkedin fa-stack-1x text-white"></i>
+              </a>
+            </span>
+            <span class="fa-stack">
+              <a href="#">
+                <i class="fas fa-circle fa-stack-2x"></i>
+                <i class="fab fa-instagram fa-stack-1x text-white"></i>
+              </a>
+            </span>
+          </span>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Header -->
+    <header class="header py-7 vh-100" style="background-color: rgb(55, 55, 234);">
+      <div class="container">
+        <div class="row mb-5 text-center">
+          <div class="col-12 text-container">
+            <h1 class="display-2 text-white mt-3">
+              Unlock Your Future in Tech
+            </h1>
+            <p class="lead text-white w-75 m-auto mb-4">
+              Join our immersive coding bootcamp and transform your skills into a career in web development, design, and more
+            </p>
+            <a href="#register" class="btn text-uppercase" style="background-color: orange;">
+              Register
+            </a>
+            <a href="#discover" class="btn btn-outline-light text-uppercase">
+              Discover
+            </a>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-12">
+            <!-- Image Slider -->
+            <div id="slider" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-indicators">
+                <button
+                  class="active"
+                  type="button"
+                  data-bs-slide-to="0"
+                  data-bs-target="#slider"
+                  aria-current="true"
+                  aria-label="Slide 1"
+                ></button>
+                <button
+                  type="button"
+                  data-bs-slide-to="1"
+                  data-bs-target="#slider"
+                  aria-label="Slide 2"
+                ></button>
+                <button
+                  type="button"
+                  data-bs-slide-to="2"
+                  data-bs-target="#slider"
+                  aria-label="Slide 3"
+                ></button>
+              </div>
+              <div class="carousel-inner rounded-5">
+                <div class="carousel-item active">
+                  <img style="object-fit: cover; height: 370px;"
+                    src="./images/1.jpg" 
+                    alt=""
+                    class="d-block w-100 rounded-5"
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img style="object-fit: cover; height: 370px;"
+                    src="./images/2.jpg"
+                    alt=""
+                    class="d-block w-100 rounded-5"
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img style="object-fit: cover; height: 370px;"
+                    src="./images/3.jpg"
+                    alt=""
+                    class="d-block w-100 rounded-5"
+                  />
+                </div>
+              </div>
+              <!-- Buttons -->
+              <button
+                class="carousel-control-prev"
+                type="button"
+                data-bs-slide="prev"
+                data-bs-target="#slider"
+              >
+                <span class="carousel-control-prev-icon"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button
+                class="carousel-control-next"
+                type="button"
+                data-bs-slide="next"
+                data-bs-target="#slider"
+              >
+                <span class="carousel-control-next-icon"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Register -->
+    <section class="register py-6 overflow-hidden" style="background-color: orange;">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6">
+            <h2>Ready to Kickstart Your Coding Journey?</h2>
+            <p>
+              Join our immersive coding bootcamp designed to turn beginners into confident developers in just a few months! Whether you're looking to start a new career, upskill, or bring your ideas to life, we’ve got you covered.
+            </p>
+
+            <ul class="list-unstyled vstack gap-3">
+              <li>
+                <i class="fas fa-square"></i>
+                <strong>Real-World Projects:</strong> Work on real-world coding challenges that simulate industry scenarios, helping you build a strong portfolio to showcase your skills to potential employer
+              </li>
+              <li>
+                <i class="fas fa-square"></i>
+                <strong>Personalized Mentorship:</strong> Benefit from one-on-one mentorship from experienced developers who will guide you through complex concepts and provide personalized feedback.
+              </li>
+              <li>
+                <i class="fas fa-square"></i>
+                <strong>Job Guarantee:</strong> We’re so confident in our program that we offer a job placement guarantee to eligible graduates—your success is our priority
+              </li>
+            </ul>
+          </div>
+          <div class="col-lg-6 p-4"> <br> <br>
+            <form>
+              <div class="my-4">
+                <input
+                  type="text"
+                  class="form-control form-control-lg rounded-0 border-0"
+                  placeholder="Enter name"
+                />
+              </div>
+              <div class="my-4">
+                <input
+                  type="email"
+                  class="form-control form-control-lg rounded-0 border-0"
+                  placeholder="Enter email"
+                />
+              </div>
+              <div class="my-4">
+                <input
+                  type="text"
+                  class="form-control form-control-lg rounded-0 border-0"
+                  placeholder="Enter phone number"
+                />
+              </div>
+              <div class="form-check">
+                <input type="checkbox" class="form-check-input" value="" />
+                <label for="terms" class="form-check-label">
+                  I agree to the terms and conditions
+                </label>
+              </div>
+              <div class="d-grid mt-4">
+                <button class="btn btn-outline-dark" style="background-color: rgb(57, 57, 236); color: white;">Register</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Details 1 -->
+    <section id="discover" class="details py-6 ">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6"> <br> <br>
+            <img
+              src="./images/5.jpg"
+              alt=""
+              class="img-fluid rounded-5 mb-4"
+            />
+          </div>
+          <div class="col-lg-6 d-flex flex-column justify-content-center">
+            <h2>Why Join Our Coding Bootcamp?</h2>
+            <p style="font-size: 14px;">
+              By enrolling in our coding bootcamp, you'll gain access to an array of invaluable resources designed to accelerate your journey into tech. With expert-led instruction, you'll master core web technologies like HTML, CSS, JavaScript, and React through practical, hands-on projects. Our personalized mentorship ensures that you receive tailored guidance, while our career support services, including resume building, interview preparation, and networking opportunities, help position you for success in the job market. Plus, with flexible learning options and a job guarantee for eligible graduates, you're not just learning to code—you’re securing your future in a thriving industry.
+              With expert instructors and comprehensive learning, you'll gain the
+              confidence and competence to tackle challenges and achieve
+              success.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Points -->
+    <section class="points pb-5" >
+      <div class="container">
+        <div class="row text-center mb-5">
+          <div class="col-md-8 offset-md-2">
+            <h2>Maximize Your Skills with Our Dynamic Training Program</h2>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6 mb-4">
+            <div class="d-flex gap-3">
+              <div class="number">
+                <span class="bg-primary py-2 px-4 fs-3 rounded-circle">
+                  1
+                </span>
+              </div>
+              <div>
+                <h3 class="fs-4 mx-3">Enhance Your Skills</h3>
+                <p>
+                  Our bootcamp provides comprehensive training and practical exercises to help you enhance your skills across various programming domains. From front-end development to mastering full-stack technologies, we’ve got you covered.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 mb-4">
+            <div class="d-flex gap-3">
+              <div class="number">
+                <span class="bg-primary py-2 px-4 fs-3 rounded-circle">2</span>
+              </div>
+              <div>
+                <h3 class="fs-4">Collaborative Learning Environment</h3>
+                <p>
+                  You won’t be learning alone. Join a collaborative environment where you work with peers on group projects, discuss coding challenges, and develop valuable teamwork skills
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 mb-4">
+            <div class="d-flex gap-3">
+              <div class="number">
+                <span class="bg-primary py-2 px-4 fs-3 rounded-circle">3</span>
+              </div>
+              <div>
+                <h3 class="fs-4">Real-World Experience</h3>
+                <p>
+                  Work on hands-on projects that simulate actual industry challenges, allowing you to apply your learning in practical scenarios. Build an impressive portfolio that demonstrates your abilities to future employers.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 mb-4">
+            <div class="d-flex gap-3">
+              <div class="number">
+                <span class="bg-primary py-2 px-4 fs-3 rounded-circle">4</span>
+              </div>
+              <div>
+                <h3 class="fs-4">Flexible Learning Options</h3>
+                <p>
+                  We understand that everyone has different schedules. That’s why we offer flexible learning paths—whether you’re studying full-time or balancing a career, our bootcamp adapts to your needs.
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 mb-4">
+            <div class="d-flex gap-3">
+              <div class="number">
+                <span class="bg-primary py-2 px-4 fs-3 rounded-circle">5</span>
+              </div>
+              <div>
+                <h3 class="fs-4">Career Services</h3>
+                <p>
+                  We don’t just teach you how to code. Our bootcamp includes career services like resume reviews, interview preparation, and networking opportunities to help you transition smoothly into your new tech career.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 mb-4">
+            <div class="d-flex gap-3">
+              <div class="number">
+                <span class="bg-primary py-2 px-4 fs-3 rounded-circle">6</span>
+              </div>
+              <div>
+                <h3 class="fs-4">Job Guarantee</h3>
+                <p>
+                  We are confident in our program’s ability to prepare you for the tech industry. That’s why we offer a job placement guarantee to eligible graduates, ensuring that your investment pays off.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Course Summary -->
+    <section id="summary" class="summary mt-5 w-75 m-auto" style="background-color: orange;">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <h2 class="text-center mb-5 py-4">Course Summary</h2>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12">
+            <div class="bg-white p-5">
+              <ul class="list-unstyled">
+                <li class="border-bottom pb-3">
+                  <h5>1. Comprehensive Training</h5>
+                  <p>
+                    Our bootcamp covers essential web technologies including HTML, CSS, JavaScript, and React, equipping you with the skills to build modern, responsive websites and applications. You’ll also learn back-end development with Node.js and databases like MongoDB, gaining full-stack expertise
+                  </p>
+                </li>
+                <li class="border-bottom pb-3 pt-5">
+                  <h5>Hands-On Experience</h5>
+                  <p>
+                    Through real-world projects, you’ll apply what you’ve learned to build a professional portfolio. Personalized mentorship from industry experts ensures you receive ongoing guidance, helping you master even the most complex concepts
+                  </p>
+                </li>
+                <li class="pb-3 pt-5">
+                  <h5>Career Development</h5>
+                  <p>
+                    In addition to technical training, our bootcamp offers career services such as resume building, interview preparation, and networking opportunities. With flexible learning options and a collaborative environment, we’re here to help you land your dream job in tech.
+                  </p>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Details 2 -->
+    <section class="details py-6 bg-light">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6">
+            <img
+              src="./images/4.jpg"
+              alt=""
+              class="img-fluid rounded-5 mb-4"
+            />
+          </div>
+          <div class="col-lg-6 d-flex flex-column justify-content-center">
+            <h2>Accelerate Your Coding Journey with Expert Sessions</h2>
+            <p>
+              Take part in our hands-on coding sessions, designed to fast-track your development skills and career growth. Led by industry professionals, these sessions cover essential topics such as web development, full-stack programming, and problem-solving techniques.
+            </p>
+            <p>
+              Dive into practical coding challenges, collaborative projects, and gain real-world experience that sets you apart in the tech industry. Unlock your potential and start building a future in coding today.
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Invitation -->
+    <section class="invitation mb-5 bg-light">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="invitation-bg text-center py-6 rounded-5">
+              <div class="text-white w-75 m-auto">
+                <h2 class="display-5 fw-bold">Save the Date: December 22nd!</h2>
+                <p>
+                  Join us for an exciting seminar on December 22nd, where industry experts will dive deep into the latest trends and strategies in advertising and marketing. This interactive event promises valuable insights and practical tips that you can apply to grow your expertise. Don’t miss out on this opportunity to learn, connect, and elevate your skillset. Reserve your spot and be part of this inspiring experience!
+                </p>
+                <a href="#register" class="btn btn-primary btn-lg">
+                  Register Now
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Takeaways -->
+    <section id="takeaways" class="takeaways my-5 bg-light">
+      <div class="container">
+        <div class="row text-center mb-5">
+          <div class="col-md-8 offset-md-2">
+            <h2>What You’ll Gain</h2>
+            <p class="lead">
+              Here are some of the takeaways and benefits you can expect from
+              our programs.
+            </p>
+          </div>
+        </div>
+
+        <!-- Row 1 -->
+        <div class="row">
+          <div class="col-md-4">
+            <div class="card mb-4 rounded-0 border-0 p-3">
+              <div class="card-body text-center">
+                <i
+                  class="fas fa-atom fa-3x text-primary bg-light rounded-circle p-3 my-4"
+                ></i>
+                <h5 class="card-title">Hands-On Coding Experience</h5>
+                <p class="card-text">
+Engage in practical coding exercises and real-world projects that enhance your programming skills
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="card mb-4 rounded-0 border-0 p-3">
+              <div class="card-body text-center">
+                <i
+                  class="fas fa-key fa-3x text-primary bg-light rounded-circle p-3 my-4"
+                ></i>
+                <h5 class="card-title">Cybersecurity Awareness</h5>
+                <p class="card-text">
+                  Discover the importance of cybersecurity and learn how to
+                  protect yourself and your digital assets from cyber threats.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="card mb-4 rounded-0 border-0 p-3">
+              <div class="card-body text-center">
+                <i
+                  class="fas fa-newspaper fa-3x text-primary bg-light rounded-circle p-3 my-4"
+                ></i>
+                <h5 class="card-title">Expert Guidance</h5>
+                <p class="card-text">
+                  Receive personalized mentorship from experienced developers who provide valuable feedback and support throughout your learning journey.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Second Row -->
+          <div class="col-md-4">
+            <div class="card mb-4 rounded-0 border-0 p-3">
+              <div class="card-body text-center">
+                <i
+                  class="fas fa-users fa-3x text-primary bg-light rounded-circle p-3 my-4"
+                ></i>
+                <h5 class="card-title">Career Preparation</h5>
+                <p class="card-text">
+                  Access resources and workshops focused on resume building, interview techniques, and job placement strategies to help you transition smoothly into the tech industry.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="card mb-4 rounded-0 border-0 p-3">
+              <div class="card-body text-center">
+                <i
+                  class="fas fa-handshake fa-3x text-primary bg-light rounded-circle p-3 my-4"
+                ></i>
+                <h5 class="card-title">Networking Opportunities</h5>
+                <p class="card-text">
+                  Connect with peers and industry professionals through collaborative projects and networking events, expanding your professional connections.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="card mb-4 rounded-0 border-0 p-3">
+              <div class="card-body text-center">
+                <i
+                  class="fas fa-chart-bar fa-3x text-primary bg-light rounded-circle p-3 my-4"
+                ></i>
+                <h5 class="card-title">Comprehensive Learning Materials</h5>
+                <p class="card-text">
+                  Utilize a wealth of learning resources, including interactive tutorials, coding challenges, and industry case studies to deepen your understanding and expertise.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Subscribe Form -->
+    <section id="subscribe" class="subscribe my-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 offset-md-3 text-center">
+            <h2>
+              Subscribe to our email list and get updates from the experts
+            </h2>
+            <form>
+              <div class="my-4">
+                <input
+                  type="email"
+                  class="form-control form-control-lg"
+                  placeholder="Enter email"
+                />
+                <div class="form-text">
+                  We will never share your email address
+                </div>
+              </div>
+              <div class="d-grid">
+                <button class="btn btn-primary">Subscribe</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer mt-4 py-5 text-white" style="background-color: rgb(57, 57, 245);">
+      <div class="container">
+        <div class="row text-center">
+          <div class="col-md-4 mb-4 mb-md-0">
+            <h5>Get in Touch</h5>
+            <p style="font-size: 13px;">
+              Have questions or need support? Our team is here to help you on your learning journey. Whether you need information about our programs, assistance with enrollment, or advice on your career path, feel free to reach out to us anytime.
+            </p>
+          </div>
+          <div class="col-md-4 mb-4 mb-md-0">
+            <h5>Programs</h5>
+            <ul style="font-size: 13px;" class="list-unstyled">
+              <li><a href="#fullstack" class="text-warning">Full-Stack Bootcamp</a></li>
+              <li><a href="#frontend" class="text-warning">Front-End Development</a></li>
+              <li><a href="#backend" class="text-warning">Back-End Development</a></li>
+              <li><a href="#data-science" class="text-warning">Data Science</a></li>
+              <li><a href="#web-design" class="text-warning">Web Design</a></li>
+            </ul>
+          </div>
+          <div class="col-md-4 mb-4 mb-md-0">
+            <h5>Connect</h5>
+            <div class="d-flex justify-content-center gap-3">
+              <a href="#" aria-label="Facebook"><i class="fab fa-facebook fa-2x text-white"></i></a>
+              <a href="#" aria-label="Twitter"><i class="fab fa-twitter fa-2x text-white"></i></a>
+              <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin fa-2x text-white"></i></a>
+              <a href="#" aria-label="Instagram"><i class="fab fa-instagram fa-2x text-white"></i></a>
+              <a href="#" aria-label="YouTube"><i class="fab fa-youtube fa-2x text-white"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
